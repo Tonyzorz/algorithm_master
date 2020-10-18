@@ -1,4 +1,4 @@
-package basic.quick_sort.jinkwang;
+package basic.donbinna_algo.quick_sort.jinkwang;
 
 public class QuickSort
 {
@@ -30,7 +30,7 @@ public class QuickSort
 	// 퀵정렬
 	public static void quickSort(int data[], int start, int end)
 	{
-		if (start < end)
+		if (start < end) // 두개 포인터가 만나는 경우는 종결 조건이다.
 		{
 			int p = partition(data, start, end);
 			quickSort(data, start, p - 1);// 피벗이 이제 오른쪽 끝에서 구분해줄수있는 i+1지점으로 옴 이 녀석보다 작은
@@ -44,7 +44,7 @@ public class QuickSort
 	static int partition(int data[], int start, int end)
 	{
 		int pivot = data[end];
-		int i = (start - 1);// 피벗보다 작은수의 숫자, 나중에 피벗과 위치를 바꾼다
+		int i = (start - 1);// 피벗보다 작은수의 숫자, 나중에 피벗과 위치를 바꾼다 -1 에서 시작해서 피벗보다 작은수일떄 if문 타고 증가
 		for (int j = start; j < end; j++)
 		{
 			if (data[j] <= pivot)
@@ -56,7 +56,7 @@ public class QuickSort
 				// int array[] = swap();
 			}
 		}
-		// swap(data[i+1], data[end]);
+		// swap(data[i+1], data[end]); 여기서 i의 위치가 pivot보다 작은 수들 이므로 i+1 과 pivot를 swap해주는것 그러면 swap된 위치에 pivot이 오면서 그거보다 작은수와 큰수로 정렬됨
 		int temp = data[i + 1]; // i + 1과 오른쪽 끝의 피벗과 위치를 바꾸어 array 파티션을 두개로 쪼갠다. 이제 피벗
 								// 기준으로 오른쪽은 큰값 왼쪽들은 작은값들이 (피벗보다 크고 작은것) 정렬됬는지는 알수 없지만
 								// 값은 피벗보다 크거나 작은녀석들로 양분된 것을 알수 있다. 이때 재귀함수로 왼쪽을 소트하고 오른쪽을

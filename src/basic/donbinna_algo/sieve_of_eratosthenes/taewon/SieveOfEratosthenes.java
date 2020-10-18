@@ -1,4 +1,4 @@
-package basic.sieve_of_eratosthenes.taewon;
+package basic.donbinna_algo.sieve_of_eratosthenes.taewon;
 
 public class SieveOfEratosthenes {
 

@@ -1,4 +1,4 @@
-package basic.greedy.jinkwang;
+package basic.donbinna_algo.greedy.jinkwang;
 
 public class Greedy {
 

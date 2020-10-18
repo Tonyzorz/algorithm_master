@@ -1,4 +1,4 @@
-package basic.union_find.taewon;
+package basic.donbinna_algo.union_find.taewon;
 
 public class UnionFind {
 

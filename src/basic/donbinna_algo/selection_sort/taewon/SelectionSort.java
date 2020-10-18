@@ -1,4 +1,4 @@
-package basic.selection_sort.taewon;
+package basic.donbinna_algo.selection_sort.taewon;
 
 public class SelectionSort {
 

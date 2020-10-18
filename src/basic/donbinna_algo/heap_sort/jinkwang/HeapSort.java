@@ -1,4 +1,4 @@
-package basic.heap_sort.jinkwang;
+package basic.donbinna_algo.heap_sort.jinkwang;
 
 public class HeapSort {
 

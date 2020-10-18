@@ -1,4 +1,4 @@
-package basic.bubble_sort.jinkwang;
+package basic.donbinna_algo.bubble_sort.jinkwang;
 
 public class BubbleSort
 {

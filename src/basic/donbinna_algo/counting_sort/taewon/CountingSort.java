@@ -1,4 +1,4 @@
-package basic.counting_sort.taewon;
+package basic.donbinna_algo.counting_sort.taewon;
 
 public class CountingSort {
 

@@ -1,4 +1,4 @@
-package basic.breah_first_search.taewon;
+package basic.donbinna_algo.breah_first_search.taewon;
 
 public class BreathFirstSearch {
 

@@ -1,4 +1,4 @@
-package basic.strongly_connected_component.taewon;
+package basic.donbinna_algo.strongly_connected_component.taewon;
 
 public class StronglyConnectedComponent {
 

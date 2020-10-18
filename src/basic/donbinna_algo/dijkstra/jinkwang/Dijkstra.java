@@ -1,4 +1,4 @@
-package basic.dijkstra.jinkwang;
+package basic.donbinna_algo.dijkstra.jinkwang;
 
 public class Dijkstra {
 

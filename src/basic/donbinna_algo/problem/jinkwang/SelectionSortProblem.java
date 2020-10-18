@@ -1,4 +1,4 @@
-package basic.problem.jinkwang;
+package basic.donbinna_algo.problem.jinkwang;
 
 import java.util.Scanner;
 

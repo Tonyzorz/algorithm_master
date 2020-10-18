@@ -1,4 +1,4 @@
-package basic.stack.jinkwang;
+package basic.donbinna_algo.stack.jinkwang;
 
 public class Stack {
 

@@ -1,4 +1,4 @@
-package basic.problem.taewon;
+package basic.donbinna_algo.problem.taewon;
 
 import java.util.Scanner;
 

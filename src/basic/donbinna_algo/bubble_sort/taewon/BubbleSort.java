@@ -1,4 +1,4 @@
-package basic.bubble_sort.taewon;
+package basic.donbinna_algo.bubble_sort.taewon;
 
 public class BubbleSort {
 

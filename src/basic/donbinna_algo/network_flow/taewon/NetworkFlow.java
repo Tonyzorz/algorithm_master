@@ -1,4 +1,4 @@
-package basic.network_flow.taewon;
+package basic.donbinna_algo.network_flow.taewon;
 
 public class NetworkFlow {
 

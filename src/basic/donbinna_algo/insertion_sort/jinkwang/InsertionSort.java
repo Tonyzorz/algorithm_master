@@ -1,4 +1,4 @@
-package basic.insertion_sort.jinkwang;
+package basic.donbinna_algo.insertion_sort.jinkwang;
 
 public class InsertionSort
 {

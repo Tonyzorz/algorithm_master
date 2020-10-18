@@ -1,4 +1,4 @@
-package basic.insertion_sort.taewon;
+package basic.donbinna_algo.insertion_sort.taewon;
 
 public class InsertionSort {
 

@@ -1,4 +1,4 @@
-package basic.network_flow.jinkwang;
+package basic.donbinna_algo.network_flow.jinkwang;
 
 public class NetworkFlow {
 

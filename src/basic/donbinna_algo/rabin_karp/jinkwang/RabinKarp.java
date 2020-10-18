@@ -1,4 +1,4 @@
-package basic.rabin_karp.jinkwang;
+package basic.donbinna_algo.rabin_karp.jinkwang;
 
 public class RabinKarp {
 

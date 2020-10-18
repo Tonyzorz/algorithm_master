@@ -1,4 +1,4 @@
-package basic.queue.taewon;
+package basic.donbinna_algo.queue.taewon;
 
 public class Queue {
 

@@ -1,4 +1,4 @@
-package basic.quick_sort.taewon;
+package basic.donbinna_algo.quick_sort.taewon;
 
 public class QuickSort {
 

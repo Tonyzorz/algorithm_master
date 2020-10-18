@@ -1,4 +1,4 @@
-package basic.dijkstra.taewon;
+package basic.donbinna_algo.dijkstra.taewon;
 
 public class Dijkstra {
 

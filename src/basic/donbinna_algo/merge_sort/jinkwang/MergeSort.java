@@ -1,4 +1,4 @@
-package basic.merge_sort.jinkwang;
+package basic.donbinna_algo.merge_sort.jinkwang;
 
 public class MergeSort {
 

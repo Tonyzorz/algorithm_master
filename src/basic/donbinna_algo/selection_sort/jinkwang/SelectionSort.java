@@ -1,4 +1,4 @@
-package basic.selection_sort.jinkwang;
+package basic.donbinna_algo.selection_sort.jinkwang;
 
 public class SelectionSort
 {
