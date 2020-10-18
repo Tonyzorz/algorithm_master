@@ -10,7 +10,8 @@ public class MergeSort {
 		int length = array.length;
 		sorted = new int[length];
 		mergeSort(array, 0, length - 1);
-		
+		Scanner what = new Scanner(System.in);
+		what.
 	}
 	
 	public static void merge(int[] array, int m, int middle, int n) {
@@ -28,6 +29,7 @@ public class MergeSort {
 				j++;
 			}
 			k++;
+			
 		}
 		
 		//남은 데이터도 삽입
