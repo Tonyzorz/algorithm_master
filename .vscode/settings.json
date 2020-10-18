@@ -1,4 +1,11 @@
 {
-    "java.home": "C:\\Program Files\\Java\\java-1.8.0-openjdk-1.8.0.265-3.b01.redhat.windows.x86_64\\bin"
+    "java.home": "C:\\Program Files\\Java\\java-1.8.0-openjdk-1.8.0.265-3.b01.redhat.windows.x86_64",
+    "java.configuration.runtimes": [
+        {
+          "name": "JavaSE-15",
+          "path": "C:\\Program Files\\Java\\java-1.8.0-openjdk-1.8.0.265-3.b01.redhat.windows.x86_64",
+          "default": true
+        },
+      ]
     
 }
