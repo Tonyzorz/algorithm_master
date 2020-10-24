@@ -1,42 +1,36 @@
 package basic.donbinna_algo.heap_sort.taewon;
 
-public class HeapSort {
+public class HeapSort_test {
 
+	/*
+	 * 1. 힙정렬 만들기
+	 * 1.1 child 가 parent보다 클 시 parent와 swap
+	 * 2. 루트 값을 마지막 인덱스 와 스왑
+	 * 3. 인덱스가 root 까지 반복
+	 * 
+	 */
+	
 	public static void main(String[] args) {
 		int[] arr = {40, 20, 50, 10, 30, 70};
 		heapSort(arr);
-	}
-	
-	public static void printAll(int[] arr) {
-		System.out.print("[");
-		for(int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + ", ");
-		}
-		System.out.print("]");
-		System.out.println();
-		System.out.println();
+		printAll(arr);
 	}
 	
 	public static void heapSort(int[] arr) {
-		System.out.println("최초 입력 받은 배열");
-		printAll(arr);
-		
 		int length = arr.length;
 		heapify(arr, length);
 		
 		for(int i = length - 1; i > 0; i--) {
 			swap(arr, 0, i);
-			System.out.println("최대값을 맨뒤와 바꾼 후 배열");
-			printAll(arr);
 			heapify(arr, i);
 		}
 	}
 	
-	public static void heapify(int[] arr, int index) {
-		for(int i = 1; i < index; i++) {
+	public static void heapify(int[] arr, int end){
+		
+		for(int i = 1; i < end; i++) {
 			
 			int child = i;
-			
 			while(child > 0) {
 				int parent = (child - 1) / 2;
 				if(arr[child] > arr[parent]) {
@@ -44,8 +38,6 @@ public class HeapSort {
 				}
 				child = parent;
 			}
-			System.out.println("최대힙 구조로 변환한 배열");
-			printAll(arr);
 		}
 	}
 	
@@ -55,5 +47,12 @@ public class HeapSort {
 		arr[j] = tmp;
 	}
 	
-	
+	public static void printAll(int[] arr) {
+		for(int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+	}
+
 }
+

@@ -2,7 +2,7 @@ package basic.donbinna_algo.problem.taewon;
 
 import java.util.Scanner;
 
-public class _1_QuickSort_2751 {
+public class _1_QuickSort_2751_timeover {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
