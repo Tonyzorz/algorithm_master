@@ -29,7 +29,7 @@ public class MergeSort
 
 	private static void merge(int[] arr, int[] temp, int start, int mid, int end)
 	{
-		// 정렬위해 temp에 배열 복사
+		// 정렬위해 temp에 배열 복사 임시저장소에 정렬할 배열을 복사
 		for (int i = start; i <= end; i++)
 		{
 			temp[i] = arr[i];
@@ -56,11 +56,32 @@ public class MergeSort
 			}
 			index++;
 		}
-		// 만약 앞에 배열이 남고 뒤배열을 다 집어 넣었을때처리( 뒷배열이 남았으면 그냥 넣으면되니까 필요없음)
-		for (int i = 0; i <= mid - part1; i++)
+		// 만약 앞에 배열이 남고 뒤배열을 다 집어 넣었을때처리( 뒷배열이 남았으면 그냥 넣으면되니까 필요없음) 중간값에서 part1을 빼줘야 mid까지
+		// 남은 개수를 구할수 있고 그만큼 반복문을 돌면서 arr에 복사한다.
+		// for (int i = 0; i <= mid - part1; i++)
+		// {
+		// arr[index + i] = temp[part1 + i];
+		// }
+
+		
+		//남은배열을 순차적으로 넣어줌 이미 정렬이 되있는 두개를 합치는거이므로 비교하고 남은애는 순서대로 넣으면된다.
+		if (part1 > mid)
 		{
-			arr[index + i] = temp[part1 + i];
+			for (int t = part2; t <= end; t++)//mid까지 포함해서 돌려야 전부 다 돌리는거니까 = 꼭 확인!
+			{
+				arr[index] = temp[t];
+				index++;
+			}
 		}
+		else
+		{
+			for (int t = part1; t <= mid; t++)
+			{
+				arr[index] = temp[t];
+				index++;
+			}
+		}
+
 	}
 
 	private static void printArray(int[] arr)
@@ -74,7 +95,7 @@ public class MergeSort
 
 	public static void main(String[] args)
 	{
-		int[] arr = {3, 9, 4, 7, 5, 0, 1, 6, 8, 2};
+		int[] arr = {9,5,1,7,3,2,6,4,0};
 		printArray(arr);
 		mergeSort(arr);
 		printArray(arr);
