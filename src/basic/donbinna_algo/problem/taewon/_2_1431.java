@@ -33,7 +33,7 @@ public class _2_1431 {
 						return o1.compareToIgnoreCase(o2);
 					} else {
 						return Integer.compare(a, b);
-					}
+					 }
 				}
 				return 1;
 			}
