@@ -26,6 +26,7 @@ class Stack<T> {
 		if(top == null) {
 			throw new EmptyStackException();
 		}
+		
 		T item = top.data;
 		top = top.next;
 		return item;
@@ -33,7 +34,23 @@ class Stack<T> {
 	
 	public void push(T item) {
 		Node<T> t = new Node<T>(item);
+		t.next = top;
+		top = t;
+	}
+	
+	public T peek() {
+		if(top == null) {
+			throw new EmptyStackException();
+		}
 		
+		return top.data;
+	}
+	
+	public boolean isEmpty() {
+		if(top == null) {
+			return true;
+		}
+		return false;
 	}
 }
 

@@ -27,13 +27,15 @@ class Queue<T> {
 	public void add(T item) {
 		Node<T> t = new Node<T>(item);
 		
+		//System.out.println("current added data = " + item );
 		//마지막 노드가 있으면 뒤에있는 노드의 주소의 다음값을 수정
 		if(last != null) {
 			last.next = t;
+			//System.out.println(last.next.hashCode());
 		}
 		
 		last = t;
-		
+		//System.out.println(last.hashCode());
 		//첫번째 노드가 
 		if(first == null) {
 			first = last;
@@ -71,8 +73,19 @@ class Queue<T> {
 public class QueueMain {
 
 	public static void main(String[] args) {
-		Queue<Integer> q = new Queue<Integer>();
+		Queue q = new Queue();
 		q.add(1);
+		q.add(2);
+		q.add(3);
+		q.add(4);
+		System.out.println(q.peek());
+		q.remove();
+		System.out.println(q.peek());
+		q.remove();
+		System.out.println(q.peek());
+		q.remove();
+		System.out.println(q.peek());
+		q.remove();
 	}
 	
 }
